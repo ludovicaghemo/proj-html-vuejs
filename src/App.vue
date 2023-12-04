@@ -1,5 +1,6 @@
 <script>
 //importare componenti
+import AppHeader from "./components/AppHeader.vue";
 import { store } from "./store.js";
 
 //dichiarare componenti
@@ -11,7 +12,7 @@ export default {
   },
   created() {
   },
-  components: {},
+  components: { AppHeader },
   methods: {
   },
 };
@@ -19,7 +20,7 @@ export default {
 
 <template>
   <!-- utilizzare componenti-->
-  <h1>Help</h1>
+  <AppHeader />
 </template>
 
 <style lang="scss">
