@@ -19,27 +19,4 @@ export const store = reactive({
             value: "fr"
         }
     ],
-    headerCourses: [
-        {
-            voice: "Courses",
-        },
-        {
-            voice: "Zoom",
-        },
-        {
-            voice: "Pages",
-        },
-        {
-            voice: "Bundles",
-        },
-        {
-            voice: "Course Formats",
-        },
-        {
-            voice: "Add Course",
-        },
-        {
-            voice: "Demos",
-        }
-    ]
 });

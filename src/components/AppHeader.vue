@@ -1,13 +1,16 @@
 <script>
 import { store } from '../store';
 export default {
+    props: {
+        headerLanguages: Array,
+        headerItems: Array,
+    },
     data() {
         return {
-            store
-        }
+            store,
+        };
     },
-    methods: {
-    }
+    methods: {},
 }
 </script>
 
@@ -25,9 +28,7 @@ export default {
             <!-- Courses menu voices -->
             <div class="header-right">
                 <ul class="courses">
-                    <li class="course" v-for="course in store.headerCourses" :key="course">
-                        <a href="">{{ course.voice }}</a>
-                    </li>
+                    <li v-for="item in headerItems"><a href="">{{ item }}</a></li>
                 </ul>
 
                 <!-- Socials - WIP -->

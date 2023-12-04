@@ -1,18 +1,28 @@
 <script>
 //importare componenti
 import AppHeader from "./components/AppHeader.vue";
+import AppMain from "./components/AppMain.vue";
 import { store } from "./store.js";
 
 //dichiarare componenti
 export default {
   data() {
     return {
-      store: store
+      store: store,
+      headerCourses: [
+        "Courses",
+        "Zoom",
+        "Pages",
+        "Bundles",
+        "Course Formats",
+        "Add Course",
+        "Demos"
+      ]
     };
   },
   created() {
   },
-  components: { AppHeader },
+  components: { AppHeader, AppMain },
   methods: {
   },
 };
@@ -20,7 +30,8 @@ export default {
 
 <template>
   <!-- utilizzare componenti-->
-  <AppHeader />
+  <AppHeader :headerItems="headerCourses"/>
+  <AppMain />
 </template>
 
 <style lang="scss">
