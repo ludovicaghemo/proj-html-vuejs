@@ -2,6 +2,7 @@
 //importare componenti
 import AppHeader from "./components/AppHeader.vue";
 import AppMain from "./components/AppMain.vue";
+import AppNavBar from "./components/AppNavBar.vue";
 import { store } from "./store.js";
 
 //dichiarare componenti
@@ -22,7 +23,7 @@ export default {
   },
   created() {
   },
-  components: { AppHeader, AppMain },
+  components: { AppHeader, AppMain, AppNavBar },
   methods: {
   },
 };
@@ -31,6 +32,7 @@ export default {
 <template>
   <!-- utilizzare componenti-->
   <AppHeader :headerItems="headerCourses"/>
+  <AppNavBar />
   <AppMain />
 </template>
 

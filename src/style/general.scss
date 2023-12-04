@@ -1,4 +1,10 @@
 @import "bootstrap/scss/bootstrap.scss";
+
+// RESET
+img {
+    max-width: 100%;
+}
+
 // LAYOUT
 .container {
     width: 100%;

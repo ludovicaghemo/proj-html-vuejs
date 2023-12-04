@@ -53,7 +53,6 @@ export default {
 
 header {
     border-bottom: 1px solid $grey-border-color;
-
     .container {
         display: flex;
         justify-content: space-between;
