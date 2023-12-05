@@ -25,7 +25,6 @@ export default {
                 <button class="btn btn-primary btn-lg rounded-pill px-3">JOIN FOR FREE</button>
             </div>
             <div class="col-6 hero-image">
-                    <!-- <img src="..assets/images/hero.png" alt=""> -->
                     <img :src="getImagePath(img)" alt="">
             </div>
         </div>

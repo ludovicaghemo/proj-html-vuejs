@@ -1,5 +1,6 @@
 <script>
 import { store } from '../store';
+import AppCourses from './AppCourses.vue';
 import AppHero from './AppHero.vue';
 export default {
     data() {
@@ -8,12 +9,13 @@ export default {
         };
     },
     methods: {},
-    components: { AppHero }
+    components: { AppHero, AppCourses }
 }
 </script>
 
 <template>
     <AppHero />
+    <AppCourses />
 </template>
 
 <style scoped lang="scss">

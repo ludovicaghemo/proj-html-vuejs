@@ -86,7 +86,7 @@ export default {
                         <h5>Blog</h5>
                         <ul class="list-unstyled gray">
                             <li class="d-flex align-items-center" v-for="item in footerBlog" :key="item.text">
-                                <img :src="getImagePath(item.img)" alt="" class="mx-2 my-4">
+                                <img :src="getImagePath(item.img)" alt="" class="mx-2 my-2">
                                 <div>
                                     <p><strong>{{ item.text }}</strong></p>
                                     <p>{{ item.date }}</p>
