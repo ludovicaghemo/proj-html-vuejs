@@ -1,10 +1,12 @@
 <script>
+import AppHeroCard from './AppHeroCard.vue';
+
 export default {
     data() {
-        return {
-        };
+        return {};
     },
     methods: {},
+    components: { AppHeroCard }
 }
 </script>
 
@@ -21,6 +23,7 @@ export default {
             </div>
         </div>
     </div>
+    <AppHeroCard />
 </template>
 
 <style scoped lang="scss">
