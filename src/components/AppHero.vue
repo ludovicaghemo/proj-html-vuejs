@@ -3,9 +3,15 @@ import AppHeroCard from './AppHeroCard.vue';
 
 export default {
     data() {
-        return {};
+        return {
+            img: "hero.png"
+        };
     },
-    methods: {},
+    methods: {
+        getImagePath(img) {
+            return new URL(`../assets/images/${img}`, import.meta.url).href;
+        }
+    },
     components: { AppHeroCard }
 }
 </script>
@@ -19,7 +25,8 @@ export default {
                 <button class="btn btn-primary btn-lg rounded-pill px-3">JOIN FOR FREE</button>
             </div>
             <div class="col-6 hero-image">
-                    <img src="..assets/images/hero.png" alt="">
+                    <!-- <img src="..assets/images/hero.png" alt=""> -->
+                    <img :src="getImagePath(img)" alt="">
             </div>
         </div>
     </div>
