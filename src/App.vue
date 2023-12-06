@@ -60,6 +60,6 @@ export default {
 </template>
 
 <style lang="scss">
-@use "./style/general.scss";
-@import "@fortawesome/fontawesome-free/css/all.css"
+@use "./style/general.scss" as *;
+@import "@fortawesome/fontawesome-free/css/all.css";
 </style>
