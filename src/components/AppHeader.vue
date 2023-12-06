@@ -2,8 +2,9 @@
 import { store } from '../store';
 export default {
     props: {
-        headerLanguages: Array,
+        //headerLanguages: Array,
         headerItems: Array,
+        headerIcons: Array,
     },
     data() {
         return {
@@ -17,7 +18,7 @@ export default {
 <template>
     <header>
         <!-- Language dropdwon menu -->
-        <div class="container">
+        <div class="container d-flex align-items-center justify-content-between">
             <div class="lang-dropdown-menu">
                 <select name="languages" id="languages">
                     <option v-for="language in store.languagesArray" :value="language.value" :key="language">
@@ -26,21 +27,14 @@ export default {
                 </select>
             </div>
             <!-- Courses menu voices -->
-            <div class="header-right">
+            <div class="header-right pt-3">
                 <ul class="courses">
                     <li v-for="item in headerItems"><a href="">{{ item }}</a></li>
                 </ul>
 
-                <!-- Socials - WIP -->
+                <!-- Socials -->
                 <ul class="socials">
-                    <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
-                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href=""><i class="fa-brands fa-behance"></i></a></li>
-                    <li><a href=""><i class="fa-brands fa-dribbble"></i></a></li>
-                    <li><a href=""><i class="fa-brands fa-flickr"></i></a></li>
-                    <li><a href=""><i class="fa-brands fa-git"></i></a></li>
-                    <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
-                    <li><a href=""><i class="fa-brands fa-pinterest"></i></a></li>
+                    <li v-for="icon in headerIcons" :key="icon"><a href=""><i :class="icon"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -53,10 +47,8 @@ export default {
 
 header {
     border-bottom: 1px solid $grey-border-color;
+
     .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         color: $grey-text-color;
 
         .header-right {

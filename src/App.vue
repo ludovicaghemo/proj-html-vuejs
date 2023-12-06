@@ -20,6 +20,16 @@ export default {
         "Add Course",
         "Demos"
       ],
+      headerAwesome: [
+        'fa-brands fa-twitter',
+        'fa-brands fa-instagram',
+        'fa-brands fa-behance',
+        'fa-brands fa-dribbble',
+        'fa-brands fa-flickr',
+        'fa-brands fa-git',
+        'fa-brands fa-linkedin',
+        'fa-brands fa-pinterest'
+      ],
       footerContact: {
         title: 'Contact',
         address: 'USA, California 20, First Avenue,',
@@ -53,10 +63,10 @@ export default {
 
 <template>
   <!-- utilizzare componenti-->
-  <AppHeader :headerItems="headerCourses" />
+  <AppHeader :headerItems="headerCourses" :headerIcons="headerAwesome" />
   <AppNavBar />
   <AppMain />
-  <AppFooter :aboutFooter="footerAbout" :contactFooter="footerContact" :pagesFooter="footerPages"/>
+  <AppFooter :aboutFooter="footerAbout" :contactFooter="footerContact" :pagesFooter="footerPages" />
 </template>
 
 <style lang="scss">
