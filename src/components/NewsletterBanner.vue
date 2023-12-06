@@ -25,9 +25,8 @@ export default {
                     <p class="mb-3">YOUR EMAIL ADDRESS</p>
                     <div class="d-flex flex-nowrap">
                         <form class="d-flex align-items-center">
-                            <input class="search-bar w-100 form-control" type="search" placeholder="Enter your email"
-                                aria-label="Search">
-                            <button class="search-btn btn btn-primary" type="submit">
+                            <input class="search-bar w-100 form-control" type="search" placeholder="Enter your email" aria-label="Search">
+                            <button class="search-btn btn btn-primary">
                                 SUBSCRIBE
                             </button>
                         </form>

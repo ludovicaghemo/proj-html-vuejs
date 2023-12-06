@@ -20,7 +20,7 @@ export default {
 <template>
     <div class="large-container m-5 p-5">
         <div class="row justify-content-center">
-            <div v-for="item in store.businessOffer" class="col-6">
+            <div v-for="item in store.businessOffer" class="col-5">
                 <div class="card d-flex flex-row rounded-0 p-5">
                     <img :src="getImagePath(item.img)" alt="" class="">
                     <div class="card-text p-4 align-items-start">
