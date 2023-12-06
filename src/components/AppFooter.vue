@@ -5,6 +5,7 @@ export default {
         contactFooter: Object,
         aboutFooter: Object,
         pagesFooter: Object,
+        footerIcons: Array
     },
     data() {
         return {
@@ -35,21 +36,21 @@ export default {
     <footer>
         <div class="container">
             <div class="row">
+                <!-- About Footer Section -->
                 <div class="col-3">
-                    <div class="my-card">
+                    <div class="cs-card">
                         <h5>{{ aboutFooter.title }}</h5>
                         <div class="about">
                             <p>{{ aboutFooter.text }}</p>
                         </div>
                         <div class="d-flex">
-                            <a href=""><i class="fa-brands fa-facebook me-3 gray"></i></a>
-                            <a href=""><i class="fa-brands fa-twitter me-3 gray"></i></a>
-                            <a href=""><i class="fa-brands fa-instagram gray"></i></a>
+                            <a href="" v-for="icon in footerIcons" :key="icon"><i class="me-3 gray" :class="icon"></i></a>
                         </div>
                     </div>
                 </div>
+                <!-- Contact Footer Section -->
                 <div class="col-3">
-                    <div class="my-card">
+                    <div class="cs-card">
                         <h5>{{ contactFooter.title }}</h5>
                         <ul class="contact list-unstyled">
                             <li>{{ contactFooter.address }}</li>
@@ -60,9 +61,10 @@ export default {
                         </ul>
                     </div>
                 </div>
+                <!-- Pages Footer Section -->
                 <div class="col-3">
-                    <div class="my-card">
-                        <h5>{{ pagesFooter.title }}</h5>
+                    <div class="cs-card">
+                        <h5 class="ps-2">{{ pagesFooter.title }}</h5>
                         <div class="row d-flex">
                             <div class="col-6">
                                 <ul class="pages">
@@ -81,9 +83,10 @@ export default {
                         </div>
                     </div>
                 </div>
+                <!-- Blog Footer Section -->
                 <div class="col-3">
-                    <div class="my-card">
-                        <h5>Blog</h5>
+                    <div class="cs-card">
+                        <h5 class="ps-2">Blog</h5>
                         <ul class="list-unstyled gray">
                             <li class="d-flex align-items-center" v-for="item in footerBlog" :key="item.text">
                                 <img :src="getImagePath(item.img)" alt="" class="mx-2 my-2">
@@ -103,10 +106,6 @@ export default {
 <style scoped lang="scss">
 @use "../style/general" as *;
 @use "../style/partials/variables" as *;
-
-.card {
-    border: none;
-}
 
 ul {
     list-style-type: disc;

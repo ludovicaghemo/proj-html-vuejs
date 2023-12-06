@@ -42,6 +42,11 @@ export default {
         title: 'About',
         text: 'Masterstudy in Education WordPress theme featured by Learning Management System (LMS) for online education. Developed by StylemixThemes'
       },
+      footerAwesome: [
+        'fa-brands fa-facebook',
+        'fa-brands fa-twitter',
+        'fa-brands fa-instagram'
+      ],
       footerPages: {
         title: 'Pages',
         blog: 'Blog',
@@ -66,7 +71,7 @@ export default {
   <AppHeader :headerItems="headerCourses" :headerIcons="headerAwesome" />
   <AppNavBar />
   <AppMain />
-  <AppFooter :aboutFooter="footerAbout" :contactFooter="footerContact" :pagesFooter="footerPages" />
+  <AppFooter :aboutFooter="footerAbout" :contactFooter="footerContact" :pagesFooter="footerPages" :footerIcons="footerAwesome" />
 </template>
 
 <style lang="scss">
