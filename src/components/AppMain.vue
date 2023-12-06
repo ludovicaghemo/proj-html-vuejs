@@ -1,5 +1,6 @@
 <script>
 import { store } from '../store';
+import AppBusinessOffer from './AppBusinessOffer.vue';
 import AppCourses from './AppCourses.vue';
 import AppHero from './AppHero.vue';
 export default {
@@ -9,13 +10,14 @@ export default {
         };
     },
     methods: {},
-    components: { AppHero, AppCourses }
+    components: { AppHero, AppCourses, AppBusinessOffer }
 }
 </script>
 
 <template>
     <AppHero />
     <AppCourses />
+    <AppBusinessOffer />
 </template>
 
 <style scoped lang="scss">

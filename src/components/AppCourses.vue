@@ -81,8 +81,9 @@ export default {
     </div>
 </template>
 
-<style lang="scss" scoped>  @use "../style/general" as *;
-  @use "../style/partials/variables" as *;
+<style lang="scss" scoped>  
+@use "../style/general" as *;
+@use "../style/partials/variables" as *;
 
     .container {
       margin: 4rem auto;
