@@ -2,7 +2,6 @@
 import { store } from '../store';
 export default {
     props: {
-        //headerLanguages: Array,
         headerItems: Array,
         headerIcons: Array,
     },

@@ -1,16 +1,15 @@
 <script>
-//importare componenti
 import AppFooter from "./components/AppFooter.vue";
 import AppHeader from "./components/AppHeader.vue";
 import AppMain from "./components/AppMain.vue";
 import AppNavBar from "./components/AppNavBar.vue";
 import { store } from "./store.js";
 
-//dichiarare componenti
 export default {
   data() {
     return {
       store: store,
+      // Header Menu Items
       headerCourses: [
         "Courses",
         "Zoom",
@@ -20,6 +19,7 @@ export default {
         "Add Course",
         "Demos"
       ],
+      // Fontawesome Header Icons
       headerAwesome: [
         'fa-brands fa-twitter',
         'fa-brands fa-instagram',
@@ -30,6 +30,7 @@ export default {
         'fa-brands fa-linkedin',
         'fa-brands fa-pinterest'
       ],
+      // Footer Contact Section Items
       footerContact: {
         title: 'Contact',
         address: 'USA, California 20, First Avenue,',
@@ -38,15 +39,18 @@ export default {
         fax: 'Fax: +39 324 212 321 32',
         mail: 'info@masterstudy.com'
       },
+      // Footer About Section Items
       footerAbout: {
         title: 'About',
         text: 'Masterstudy in Education WordPress theme featured by Learning Management System (LMS) for online education. Developed by StylemixThemes'
       },
+      // Footer Fontawesome Icons
       footerAwesome: [
         'fa-brands fa-facebook',
         'fa-brands fa-twitter',
         'fa-brands fa-instagram'
       ],
+      // Footer Pages Section Items
       footerPages: {
         title: 'Pages',
         blog: 'Blog',
@@ -67,7 +71,6 @@ export default {
 </script>
 
 <template>
-  <!-- utilizzare componenti-->
   <AppHeader :headerItems="headerCourses" :headerIcons="headerAwesome" />
   <AppNavBar />
   <AppMain />

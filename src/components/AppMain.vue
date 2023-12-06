@@ -20,7 +20,7 @@ export default {
     <AppHero />
     <AppCourses />
     <AppLimitlessLearning />
-    <AppStats /> 
+    <AppStats /> />
     <AppBusinessOffer />
 </template>
 

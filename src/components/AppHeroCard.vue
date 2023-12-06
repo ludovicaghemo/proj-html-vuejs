@@ -46,7 +46,7 @@ export default {
     margin: 0 auto;
 
     .card {
-        background-color: $light-blue-bg-color; 
+        background-color: $light-blue-bg-color;
         margin-right: 2rem;
         padding: 3rem;
         border: none;

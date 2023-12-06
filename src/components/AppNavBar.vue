@@ -25,7 +25,8 @@ export default {
 
     <!-- SearchBar -->
     <form class="d-flex align-items-center">
-      <input class="search-bar form-control rounded-0 border-0" type="search" placeholder="Search courses" aria-label="Search">
+      <input class="search-bar form-control rounded-0 border-0" type="search" placeholder="Search courses"
+        aria-label="Search">
       <button class="search-btn btn btn-primary" type="submit">
         <i class="fa-solid fa-magnifying-glass"></i>
       </button>

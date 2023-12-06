@@ -57,7 +57,7 @@ export default {
                             <li>{{ contactFooter.city }}</li>
                             <li>{{ contactFooter.tel }}</li>
                             <li>{{ contactFooter.fax }}</li>
-                            <li>{{ contactFooter.mail }}</li>
+                            <li class="gray">{{ contactFooter.mail }}</li>
                         </ul>
                     </div>
                 </div>

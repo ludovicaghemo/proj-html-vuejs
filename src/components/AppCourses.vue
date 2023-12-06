@@ -81,18 +81,14 @@ export default {
     </div>
 </template>
 
-<style lang="scss" scoped>  
-@use "../style/general" as *;
-@use "../style/partials/variables" as *;
+<style lang="scss" scoped>  @use "../style/general" as *;
+  @use "../style/partials/variables" as *;
 
-    .container {
+  .container {
       margin: 4rem auto;
 
-      .course {
-
-        .courses-number {
-            color: $grey-text-color;
-        }
+      .courses-number {
+          color: $grey-text-color;
       }
-    }
+  }
 </style>
