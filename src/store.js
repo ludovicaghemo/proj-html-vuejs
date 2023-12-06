@@ -50,4 +50,22 @@ export const store = reactive({
             btnText: 'DOING BUSINESS',
         },
     ],
+    statsData: [
+        {
+            value: "2000",
+            type: "STUDENTS"
+        },
+        {
+            value: "950",
+            type: "COURSES"
+        },
+        {
+            value: "1600",
+            type: "HOURS VIDEO"
+        },
+        {
+            value: "150",
+            type: "COUNTRIES REACHED"
+        },
+    ],
 });
