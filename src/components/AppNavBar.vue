@@ -1,10 +1,6 @@
 <script>
 import { store } from '../store';
 export default {
-  props: {
-    headerLanguages: Array,
-    headerItems: Array,
-  },
   data() {
     return {
       store,
@@ -29,14 +25,14 @@ export default {
 
     <!-- SearchBar -->
     <form class="d-flex align-items-center">
-      <input class="search-bar form-control" type="search" placeholder="Search courses" aria-label="Search">
+      <input class="search-bar form-control rounded-0 border-0" type="search" placeholder="Search courses" aria-label="Search">
       <button class="search-btn btn btn-primary" type="submit">
         <i class="fa-solid fa-magnifying-glass"></i>
       </button>
     </form>
 
     <!-- Instructor - Enterprise-->
-    <div class="plan-type">
+    <div class="plan-type d-flex justify-content-between align-items-center">
       <div class="plan-item">
         <a href=""><i class="fa-solid fa-bullhorn blue-hover"></i></a>
         Become an Instructor
@@ -48,7 +44,7 @@ export default {
     </div>
 
     <!-- Login -->
-    <div class="login">
+    <div class="login d-flex justify-content-between align-items-center">
       <div>
         <a href=""><i class="fa-solid fa-user blue-hover"></i></a>
         Log in
@@ -73,8 +69,6 @@ export default {
 
 .search-bar {
   background-color: #f0f2f5;
-  border: none;
-  border-radius: 0;
   width: 400px;
 }
 
@@ -83,16 +77,10 @@ export default {
 }
 
 .plan-type {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   gap: 1rem;
 }
 
 .login {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   gap: 1rem;
 }
 
