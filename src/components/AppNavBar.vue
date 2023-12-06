@@ -1,21 +1,21 @@
 <script>
 import { store } from '../store';
 export default {
-    props: {
-        headerLanguages: Array,
-        headerItems: Array,
-    },
-    data() {
-        return {
-            store,
-        };
-    },
-    methods: {},
+  props: {
+    headerLanguages: Array,
+    headerItems: Array,
+  },
+  data() {
+    return {
+      store,
+    };
+  },
+  methods: {},
 }
 </script>
 
 <template>
-   <div class="navbar container d-flex justify-content-between align-items-center">
+  <div class="navbar container d-flex justify-content-between align-items-center">
     <!-- Logo -->
     <img src="../assets/images/MasterStudy_logo.svg" alt="">
 
@@ -63,44 +63,45 @@ export default {
 @use "../style/general" as *;
 @use "../style/partials/variables" as *;
 
-    .burger-menu {
-      gap: .4rem;
-    }
+.burger-menu {
+  gap: .4rem;
+}
 
-    .burger-icon {
-      font-size: .5rem;
-    }
+.burger-icon {
+  font-size: .5rem;
+}
 
-    .search-bar {
-      background-color: #f0f2f5;
-      border: none;
-      border-radius: 0;
-      width: 400px;
-    }
+.search-bar {
+  background-color: #f0f2f5;
+  border: none;
+  border-radius: 0;
+  width: 400px;
+}
 
-    .search-btn {
-      border-radius: 0;
-    }
+.search-btn {
+  border-radius: 0;
+}
 
-    .plan-type {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1rem;
-    }
-    .login {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1rem;
-    }
+.plan-type {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
 
-    .gray {
-        color: gray;
-    }
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
 
-    .blue-hover:hover{
-        color: blue;
-        cursor: pointer;
-    }
+.gray {
+  color: gray;
+}
+
+.blue-hover:hover {
+  color: blue;
+  cursor: pointer;
+}
 </style>

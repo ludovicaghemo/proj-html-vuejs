@@ -36,20 +36,6 @@ export const store = reactive({
     //         card-text: 'Online post-graduate certificates are a popular way to develop your professional qualifications of Masterstudy'
     //     },
     // ],
-    businessOffer: [
-        {
-            img: 'image_box_1-221x231.png',
-            title: 'Become an Instructor',
-            text: 'Teach what you love, Masterstudy gives you the tools to create a course.',
-            btnText: 'START TEACHING',
-        },
-        {
-            img: 'image_box_2-234x231.png',
-            title: 'Setup for Business',
-            text: 'Get unlimited access to 2.500 of Udemy\'s top courses for your team.',
-            btnText: 'DOING BUSINESS',
-        },
-    ],
     statsData: [
         {
             value: "2000",
@@ -66,6 +52,21 @@ export const store = reactive({
         {
             value: "150",
             type: "COUNTRIES REACHED"
+        },
+    ],
+
+    businessOffer: [
+        {
+            img: 'image_box_1-221x231.png',
+            title: 'Become an Instructor',
+            text: 'Teach what you love, Masterstudy gives you the tools to create a course.',
+            btnText: 'START TEACHING',
+        },
+        {
+            img: 'image_box_2-234x231.png',
+            title: 'Setup for Business',
+            text: 'Get unlimited access to 2.500 of Udemy\'s top courses for your team.',
+            btnText: 'DOING BUSINESS',
         },
     ],
 });

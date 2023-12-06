@@ -12,7 +12,7 @@ export default {
         };
     },
     methods: {},
-    components: { AppHero, AppCourses, AppBusinessOffer, AppLimitlessLearning, AppStats }
+    components: { AppHero, AppCourses, AppBusinessOffer, AppLimitlessLearning, AppStats}
 }
 </script>
 

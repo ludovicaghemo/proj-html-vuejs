@@ -1,12 +1,14 @@
 <script>
 import { store } from '../store';
+import NewsletterBanner from './NewsletterBanner.vue';
 
 export default {
     data() {
         return {
             store: store,
-        }
+        };
     },
+    components: { NewsletterBanner }
 }
 </script>
 
@@ -30,11 +32,14 @@ export default {
                 </div>
             </div>
         </div>
+        <NewsletterBanner />
     </div>
+   
 </template>
 
 <style lang="scss" scoped>
 @use "../style/partials/variables" as *;
+@use "../style/general" as *;
 
 .large-container {
     background-color: $light-gray-bg-color;
